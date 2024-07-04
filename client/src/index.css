@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.title {
+  padding: 100px;
+  background-image: url("../public/img/bg.jpg");
+  background-size: 80%;
+  background-repeat: repeat-x;
+}
+
+.title h1, .title p {
+  margin-bottom: 30px;
+}
+
+.footer {
+  width: 100vw;
+  /* height: 100vh; */
+  padding: 20px;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  bottom: 0px;
+}
+
+.footer a {
+  margin: 0px 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer img {
+  filter: invert();
+  max-width: 30px;
+  transition: transform 0.5s ease;
+}
+
+.footer .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer img:hover {
+  transform: scale(1.2);
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.search-box {
+  padding: 5px;
+  margin: auto;
+}
+
+.search-box input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.search-box button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  background-color: darkgreen;
+  border-width: 1px;
+  transition: background-color 0.5s ease;
+  font-weight: bolder;
+}
+
+.search-box button:hover {
+  background-color: white;
+  color: darkgreen;
+}
+
+.photo-grid {
+  column-count: 4;
+  margin: 50px auto;
+}
+
+
+.photo-item {
+  max-width: 200px;
+  transition: transform 0.3s ease;
+  break-inside: avoid;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.photo-item p {
+  margin-top: -43px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-style: italic;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  border-radius: 0px 0px 10px 10px;
+  text-align: left;
+}
+
+.photo-item:hover {
+  transform: scale(1.05);
+}
+
+.photo-item img {
+  max-width: 500px;
+  max-height: 350px;
+  border: gray 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.50) 0px 6px 6px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%; 
+  background-color: white; 
+  text-align: left;
+}
+
+th {
+  width: 20%;
+}
+
+td {
+  width: 75%;
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    padding: 50px;
+    background-size: 80%;
+  }
+
+  .photo-grid {
+    column-count: 4;
+  }
+
+  .search-box input[type="text"] {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .title {
+    padding: 50px;
+    background-size: 90%;
+  }
+
+  .photo-grid {
+    column-count: 3;
+  }
+
+  .search-box input[type="text"] {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    padding: 50px;
+    background-size: 100%;
+  }
+
+  .photo-grid {
+    column-count: 3;
+  }
+
+  .search-box input[type="text"] {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title {
+    padding: 50px;
+    background-size: 240%;
+  }
+
+  .photo-grid {
+    column-count: 2;
+  }
+
+  .search-box input[type="text"] {
+    width: 130px;
+  }
+
+  .photo-item {
+    margin: 10px 0px;
+    max-width: 160px;
+  }
+
+  .photo-item p {
+    width: 100%;
+  }
+
+  .photo-item img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+  
+  .title h1, .title p {
+    margin-bottom: 20px;
+  }
+
+  table {
+    font-size: 0.8em;
+  }
+
+  .footer {
+    font-size: 0.8em;
+  }
+
+  .footer img {
+    max-width: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .title {
+    padding-top: 50px;
+    background-size: 400%;
+  }
+
+  .photo-grid {
+    column-count: 2;
+  }
+
+  .search-box input[type="text"] {
+    width: 200px; 
+  }
+
+  .search-box button {
+    width: 200px;
+    margin-left: 0px;
+  }
+
+  .photo-grid {
+    margin: 50px auto;
+    width: 100%;
+  }
+
+  .photo-item {
+    margin: 10px 0px;
+    max-width: 160px;
+  }
+
+  .photo-item p {
+    width: 85%;
+    margin-top: -43px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: -43px auto; */
+  }
+
+  .photo-item img {
+    max-width: 130px;
+    max-height: 200px;
+  }
+  
+  .title h1, .title p {
+    margin-bottom: 20px;
+  }
+
+  table {
+    font-size: 0.8em;
+  }
+
+  .footer {
+    font-size: 0.8em;
+  }
+
+  .footer img {
+    max-width: 25px;
+  }
+}
