@@ -42,6 +42,6 @@
    It will automatically open a new browser tab at `http://localhost:4000`.
 
 ## Notes
+![image](https://github.com/bagassandih/flickr-gallery/assets/70928493/ec202c65-db47-45f1-9665-62258a04e784)
 - During installation, there might be warnings about deprecated packages. This also occurred during the initial installation of React.js, which is likely due to its source.
-- ![image](https://github.com/bagassandih/flickr-gallery/assets/70928493/ec202c65-db47-45f1-9665-62258a04e784)
 
