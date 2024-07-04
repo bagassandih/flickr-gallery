@@ -1,12 +1,10 @@
 # Flickr Feed Viewer and Search (Flickr Gallery)
+- This is the Take Home Challenge from Vesperia as the first stage of the recruitment process for the position of software engineer.
 
 ## Screenshots
 <img src="https://github.com/bagassandih/flickr-gallery/assets/70928493/6aad036e-0ab1-41bf-aa07-1fa33b08b5d2" alt="Image 1" width="850">
 <img src="https://github.com/bagassandih/flickr-gallery/assets/70928493/24c024b2-873c-4b38-bd63-f169007beea0" alt="Image 1" width="850">
 <img src="https://github.com/bagassandih/flickr-gallery/assets/70928493/2e7d43d3-6a5b-462a-ba83-bf60020376cc" alt="Image 1" width="850">
-
-## Description
-This is the Take Home Challenge from Vesperia as the first stage of the recruitment process for the position of software engineer.
 
 ## Features
 - Search based on tags
